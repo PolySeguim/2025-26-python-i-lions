@@ -31,3 +31,37 @@ miltiline message
 to my bestie."""
 
 print(message)
+
+age = 16
+print(type(age))
+age = float(age)
+print(type(age))
+
+#create a list of new emails
+
+#create a list of names
+studentNames
+emailAddress = "@ursulineacademy.org"
+
+for i in studentNames:
+#addition between two strings in cocatenation
+    email = student[i]+emailAddress
+    print(email)
+
+    
+#python allows different data types to be stored side by side in a list
+aList = ["poly", "ana", 48, 3.0, True]
+print(aList)
+"""
+
+#input function
+userName = input("What is your name? ")
+userAddress = input("What is your address? ")
+userCity = input("What is your city? ")
+userZip = input("What is your zip code? ")
+
+print(userName, userAddress, userCity, userZip)
+
+
+
+#Calculates the area of a circle
