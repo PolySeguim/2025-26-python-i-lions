@@ -7,6 +7,7 @@ on the outside of an envelope.  Your program does not need to
 read any input from the user.  (9 lines)
 """
 print("testing")
+print("testing pt 2 ")
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
