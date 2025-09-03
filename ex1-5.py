@@ -24,6 +24,14 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+def areaRoom():
+    print("Area of Room")
+    units = input("What units are you using?  feet or meters: ")
+    width = float(input("Width: "))
+    length = float(input("Length: "))
+
+    areaRoom = width*length
+    print("Area of the room is " + str(areaRoom) + " " + units + " squared")
 
 """
 Exercise 4:  Area of a Field
@@ -47,10 +55,5 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
-
-def print_hi(name):
-    print(f"Hi, {name}")
-
-
-if __name__ == "__main__":
-    print_hi("Netbeans")
+#Testing Suite
+areaRoom()
