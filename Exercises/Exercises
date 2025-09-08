@@ -1,0 +1,61 @@
+#Exercise 1:  Mailing Address
+#Create a program that displays your name and complete mailing  address formatted 
+# in the manner that you would usually see it  on the outside of an envelope.
+# Your program does not need to  read any input from the user.  (9 lines)
+
+def show_mailing_address():
+    print("Abby Miles")
+    print("6574 Trailwoods Dr")
+    print("Loveland, OH 45140")
+show_mailing_address();
+
+#Exercise 2:  Hello
+#Write a program that asks the user to enter his or her name.  
+#The program should respond with a message that says hello to 
+#the user, using his or her name.  (9 lines)
+name = input("What is your name? ")
+print("Hello, " + name + "!")
+
+#Exercise 3:  Area of a Room
+#Write a program that asks the user to enter the width and 
+#length or a room.  Once the values have been read, your 
+#program should compute and display the area of the room.  
+#The length and the width will be entered as floating point 
+#numbers.  Include units in your prompt and output message;  
+#either feet or meters, depending on which unit you are more 
+#comfortable working with.  (13 lines)
+
+def area_of_room():
+    width = float(input("Enter the width of the room in feet: "))
+    length = float(input("Enter the length of the room in feet: "))
+    area = width * length
+    print("The area of the room is: " + str(area) + " square feet.")
+area_of_room()
+
+#Exercise 4:  Area of a Field
+#Create a program that reads the length and width of a 
+#farmer’s field from the user in feet.  Display the 
+#area of the field in acres.  
+#Hint: There are 43,560 square feet in an acre
+
+def area_of_field():
+    length = float(input("Enter the length of the field in feet: "))
+    width = float(input("Enter the width of the field in feet: "))
+    area = length * width
+    area_acres = area / 43560
+    print("The area of the field is: " + str(area_acres) + " acres.")
+area_of_field()
+
+#Exercise 5:  Bottle Deposits
+#Create a program that calculates the total amount of 
+#money a user will receive for returning a certain number 
+#of bottles.  The program should ask the user for the 
+#number of bottles and then display the total refund 
+#amount.  Assume that each bottle is worth 50 cents.
+
+def bottle_deposit():
+    numOneLiterBottle = int(input("Enter the number of one-liter bottles: "))
+    numberOneLiterBottle = int(input("Enter the number of bottles over one liter: "))
+    refund = numOneLiterBottle * 0.25 + numberOneLiterBottle * 0.10
+    print("Total refund amount: $" + str(refund))
+bottle_deposit()
