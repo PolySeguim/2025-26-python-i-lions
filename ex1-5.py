@@ -67,6 +67,8 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 def exercise5():
-    bottles = [1.1,5,2,0.2,0.5,2.25]
+    num1L = float(input("how many are one liter or less"))
+    nummore1L = float(input("how many are more than 1 liter"))
+    print("the value is", (num1L*0.01)+(nummore1L*0.25), "dollars")
 
-exercise1()
+exercise5()
