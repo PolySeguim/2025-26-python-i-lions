@@ -15,6 +15,7 @@ def exercise11():
     l100km = kml*100
     print(l100km)
 
+exercise11()
 """
 Exercise 12:  Distance Between Two Points on Earth
 The surface of the Earth is curved, and teh distance between degrees
@@ -48,7 +49,7 @@ def exercise12():
     g1 = float(input("what is the longitude of the first point in degrees"))
     t2 = float(input("what is the latitude of the second point in degrees"))
     g2 = float(input("what is the longitude of the second point in degrees"))
-    distance = 637.01 * math.arccos(math.sin(t1)*math.sin(t2)+math.cos(t1)*math.cos(t2)*math.cos(g1-g2))
+    #distance = 637.01 * math.arccos(math.sin(t1)*math.sin(t2)+math.cos(t1)*math.cos(t2)*math.cos(g1-g2))
 
 """
 Exercise 13: Making Change
