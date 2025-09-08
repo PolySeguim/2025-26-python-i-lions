@@ -66,3 +66,4 @@ print(userName, userAddress, userCity, userZip)
 #Calculates the area of a circle
 diameter = float(input("Diameter: "))
 print("Area of a circle:" )
+"""
