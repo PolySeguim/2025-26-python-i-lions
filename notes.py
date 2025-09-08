@@ -18,3 +18,13 @@ whatType(3.0)
 whatType("polyana")
 whatType(True)
 whatType('p')
+
+#Create a variable names message
+message = """this is a 
+multiline message 
+to my bestie""" 
+
+print(message)
+#test inputs to print and see how they print 
+print(42000)
+print(42,000)
