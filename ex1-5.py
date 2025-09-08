@@ -6,14 +6,24 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
-
+def exercise1():
+    name = input("what is your name?")
+    address = input("what is your address")
+    city = input("what city do you live in")
+    state = input("what is your state abbriviation")
+    zip = input("what is your zip code")
+    print(name)
+    print(address)
+    print(city, state,",", zip)
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
-
+def exercise2():
+    name = input("what's your name")
+    print("hello,", name)
 """
 Exercise 3:  Area of a Room
 Write a program that asks the user to enter the width and 
@@ -24,6 +34,7 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
+
 def areaRoom():
     print("Area of Room")
     units = input("What units are you using?  feet or meters: ")
@@ -40,7 +51,12 @@ farmer’s field from the user in feet.  Display the
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
 """
-
+def exercise4():
+    units = input("what units are you using?")
+    length = float(input("what is the length of the feild"))
+    width = float(input("what is the width of the feild"))
+    area = length * width
+    print("the area of the feild is",area,units)
 """
 Exercise 5:  Bottle Deposits
 In many jurisdictions a small deposit is added to drink 
@@ -54,6 +70,11 @@ and displaying the refund that will be received for returning
 those containers.  Format the output so that it includes a dollar 
 sign and always displays exactly two decimal places.  (15 lines)
 """
+def exercise5():
+    num1L = float(input("how many are one liter or less"))
+    nummore1L = float(input("how many are more than 1 liter"))
+    print("the value is", (num1L*0.01)+(nummore1L*0.25), "dollars")
+
 
 def bottleDeposits():
     # reads the number of bottles
