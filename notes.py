@@ -65,3 +65,67 @@ print(userName, userAddress, userCity, userZip)
 
 
 #Calculates the area of a circle
+
+classOf2026 = ["Student 1", "Student 2"]
+seniors = "not a good variable name...  why???"
+
+# MLS formatting for GEEKS
+#Global variable for things that cannot change
+
+# In naming variable the variable day <> Day
+# we want to use lower case as much as possible...
+# for Python day_of_the_week
+# in Java dayOfTheWeek
+
+"""
+ILLEGAL VARIABLE NAMES!
+21yearsold = "party!"
+dolla$$$$
+
+def = "def"
+class = "python"
+"""
+
+print(20+12)
+hour = 3
+print(hour - 1)
+print(hour * 60, " minutes in ", hour, " hour")
+
+myName = "poly"
+print(myName * 5)
+# str is casting the integer data type to a string
+# so you can concatenate (add) two strings together
+print(myName + str(5))
+
+#Operations
+# Addition
+#   add numbers or concatenate string
+# Subtraction
+#   to numbers only
+# Division
+#   numbers only... 
+#   - / - division (typical) but the answer is always a float
+#   - // - floor division (divides to the largest integer) answer is an int
+#   - % - modulus operator (finds the remainder of the division) answer is an int
+print(10/3)  #3.3333333333333335
+print(10//3) #3
+print(10%3)  #1
+# Multiplication
+#   for numbers and strings
+#   - * - multiplies only
+#   - ** - exponential
+print(8*2)
+print(8**2)
+
+print(int(3.14))
+print(int(3.99999))
+print(int(-4.11212132))
+print(int(-4.99999))
+print(int("1977"))
+#print(int("polyana"))
+
+print(float(1977))
+print(float(3.1415))
+
+print(str(1977))
+print(str(3.0))
