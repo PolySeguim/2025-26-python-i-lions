@@ -28,3 +28,36 @@ print(message)
 #test inputs to print and see how they print 
 print(42000)
 print(42,000)
+
+classof2026 = ["Student 1", "Student 2"]
+
+#MLA formatting for geeks
+#Global variables for things that cannot change
+JANUARY = "January"
+
+#In naming vaiable the variable day <> Day
+# we want lowercase as much as possible 
+#for python day_of_the_week
+#you cannot start a variable with digits 
+
+
+print[hour * "minutes in", hour, "hour"]]
+
+myName = "poly"
+print(myName *5)
+#str is casting the integer data type to a string 
+#so you can concatenate two strings together
+print(myname +str(5))
+
+#Operations
+#addition 
+#add numbers or concatenate strings 
+#subtraction 
+# to numbers only 
+#division 
+#numbers only 
+#  - / - 
+#  - // -
+# - % - modulus operator
+
+

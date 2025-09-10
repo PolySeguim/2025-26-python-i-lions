@@ -9,9 +9,7 @@ read any input from the user.  (9 lines)
 
 """
 Exercise 2:  Hello
-Write a program that asks the user to enter his or her name.  
-The program should respond with a message that says hello to 
-the user, using his or her name.  (9 lines)
+  (9 lines)
 """
 
 """
