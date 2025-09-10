@@ -6,12 +6,17 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
-
+print("Megan Bailey")
+print("1250 Timbe Ridge Ct.")
+print("Batavia, OH")
+print("45103")
 """
 Exercise 2:  Hello
   (9 lines)
 """
-
+print("Hello")
+userName = input("What is your name? ")
+print("Hello " + userName)
 """
 Exercise 3:  Area of a Room
 Write a program that asks the user to enter the width and 
@@ -22,7 +27,11 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
-
+print("Hello")
+width = float(input("What is the width in feet? "))
+length = float(input("What is the length in feet? "))
+area = width * length
+print(area)
 """
 Exercise 4:  Area of a Field
 Create a program that reads the length and width of a 
@@ -30,7 +39,10 @@ farmer’s field from the user in feet.  Display the
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
 """
-
+length = float(input("What is the length of the field in feet? "))
+width = float(input("What is the width of the field in feet? "))
+area = (length * width)/ 43560
+print(area)
 """
 Exercise 5:  Bottle Deposits
 In many jurisdictions a small deposit is added to drink 
@@ -44,7 +56,12 @@ and displaying the refund that will be received for returning
 those containers.  Format the output so that it includes a dollar 
 sign and always displays exactly two decimal places.  (15 lines)
 """
-
+howmanyliterbottles = float(input("How many liter bottles do you have? "))
+howmanybiggerliter = float(input("How many bottles that are more than one liter do you have? "))
+dollarfromliterbottles = howmanyliterbottles * .10
+dollarfrombigger = howmanybiggerliter * .25
+refund = dollarfromliterbottles + dollarfrombigger 
+print("$" + str(refund))
 
 def print_hi(name):
     print(f"Hi, {name}")

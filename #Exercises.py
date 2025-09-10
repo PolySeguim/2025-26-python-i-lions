@@ -1,61 +1,4 @@
-#Exercises 
-#Exercise 1
-print("Megan Bailey")
-print("1250 Timbe Ridge Ct.")
-print("Batavia, OH")
-print("45103")
 
-#Exercise 2 
-#Write a program that asks the user to enter his or her name.
-# The program should respond with a message that says hello to
-# the user, using his or her name.
-print("Hello")
-userName = input("What is your name? ")
-print("Hello " + userName)
-#Exercise 3 
-#Write a program that asks the user to enter the width and length or a room.  Once the values have been read, your program should compute and display the area of the room.  
-# The length and the width will be entered as floating point 
-# numbers.  Include units in your prompt and output message;  
-# either feet or meters, depending on which unit you are more 
-# comfortable working with.  (13 lines)
-
-print("Hello")
-width = float(input("What is the width in feet? "))
-length = float(input("What is the length in feet? "))
-area = width * length
-print(area)
-
-#Excersize 4
-# Exercise 4:  Area of a Field
-# Create a program that reads the length and width of a 
-# farmer’s field from the user in feet.  Display the 
-# area of the field in acres.  
-# Hint: There are 43,560 square feet in an acre
-
-length = float(input("What is the length of the field in feet? "))
-width = float(input("What is the width of the field in feet? "))
-area = (length * width)/ 43560
-print(area)
-
-"""
-Exercise 5:  Bottle Deposits
-In many jurisdictions a small deposit is added to drink 
-containers to encourage people to recycle them.  In one 
-particular jurisdiction, drink containers holding one liter 
-or less have a $0.10 deposit, and drink containers holding 
-more than one liter have $0.25 deposit.
-Write a program that reads the number of containers of each 
-size from the user.  Your program should continue by computing 
-and displaying the refund that will be received for returning 
-those containers.  Format the output so that it includes a dollar 
-sign and always displays exactly two decimal places.  (15 lines)
-"""
-howmanyliterbottles = float(input("How many liter bottles do you have? "))
-howmanybiggerliter = float(input("How many bottles that are more than one liter do you have? "))
-dollarfromliterbottles = howmanyliterbottles * .10
-dollarfrombigger = howmanybiggerliter * .25
-refund = dollarfromliterbottles + dollarfrombigger 
-print("$" + str(refund)) 
 
 """
 Exercise 6: Tax and Tip
@@ -117,6 +60,84 @@ places.  (19 lines)
 """
 interest = 0.04
 balance = int(input("What is your bank balance? "))
-print(balance)
+print("This is your balance:" , balance)
+balanceafter1year = balance + (balance * interest)
+balanceafter2year = balance + (balanceafter1year * interest)
+balanceafter3year = balance + (balanceafter2year * interest)
+print("Balance after one year = " , balanceafter1year)
+print("Balance after two years = " , balanceafter2year)
+print("Balance after three years = " , balanceafter3year)
 
+"""
+Exercise 10:  Arithmetic
+Create a program that reads two integers, a and b, from the user.  Your program
+should compute and display:
+- the sum of a and b
+- the difference when b is subtracted from a
+- the product of a and b
+- the quotient when a is divided by b
+- the remainder when a is divided by b
+- the result of log10 a
+- the result of a to the power of b
 
+Hint:  you will probably find the log10 function in the math module helpful
+for computing the second last item in the list.
+"""
+
+import math
+a = int(input("Whats the first integer? "))
+b = int(input("What is the second integer? "))
+sumab = a + b
+difference = b-a
+product = a * b
+quotient = a/b
+remainder = a % b 
+log = math.log10(a)
+power = a^b
+print("The sum of" + str(a) + "and of" + str(b) + "=" + str(sumab))
+print("The difference of" + str(b) + "and of" + str(a) + "=" + str(difference))
+print("The product of" + str(a) + "and of" + str(b) + "=" + str(difference))
+print("The quotient of" + str(a) + "and of" +str(b) + "=" + str (quotient))
+print("The remainder of" + str(a) + "divided by" +str(b) +"=" +str(remainder))
+print("The log10 of a =" + str(log))
+print(str(a) + "to the power of" + str(b) + "="+  str(power))
+"""
+Exercise 11: Fuel Efficiency
+In the United States, fuel efficiency for vehicles is normally expressed
+in miles-per-gallon (MPG).  In Canada, fuel efficiency is normally
+expressed in liters-per-hundred_kilometers (L/100km).  Use your 
+research skills to determine how to convert from MPG to L/100km.
+Then create a program that reads a value from the user in American units
+and display the equivalent fuel efficiency in Canadian units.
+"""
+#L/100km=235.215/mpg(US)
+a = (input("How many MPG? "))
+incanadian = 235.215 / float(a)
+print(str(incanadian)+ "L/100km")
+
+"""
+Exercise 12:  Distance Between Two Points on Earth
+The surface of the Earth is curved, and teh distance between degrees
+of longitude varies with latitude.  As a result, finding the distance
+between two points on the surface of the Earth is more complicated than 
+simply using the Pythagorean theorem.
+
+Let (t1,g1) and (t2,g2) be the latitude and longitude of two points on the
+Earth's surface.  The distance between these points, following the 
+surface of the Earth, in kilometers is:
+
+distance = 6371.01 x arccos(sin(t1) x sin(t2) + cos(t1) x cos(t2) x cos(g1-g2))
+
+*** The value 6371.01 in the previous equation wasn't selected at random.
+It is the average radius of the EArth in kilometers. ***
+
+Create a program that allows the user to enter the latitude and longitude
+of two points on the Earth in degrees.  Your program should display the 
+distance between the points, following the surface of the earth, in km.
+
+*** HINT ***
+Python's trigonometric functions operate in radians.  As a result, you will
+need to convert the user's input from degrees to radians before computing
+the distance with the formula discussed previously.  The math module 
+contains a function named RADIANS which converts from degrees to radians.
+"""
