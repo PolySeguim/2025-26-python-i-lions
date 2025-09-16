@@ -11,7 +11,7 @@ geoff.right(90)
 
 # Repeat the above steps to complete the square
 for _ in range(3):
-geoff.forward(100)
+ geoff.forward(100)
 geoff.right(90)
 
 # Keep the window open until clicked

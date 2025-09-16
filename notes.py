@@ -24,8 +24,9 @@ whatType(3)
 whatType(3.0)
 whatType("3.0")
 whatType(True)
-whatType("polyana")
-whatType('p')
+whatType("Wubi")
+whatType('W')
+
 
 #Create a variable named message
 message = """this is a
@@ -37,11 +38,11 @@ print(message)
 print(42000)
 #every time you have a comma between values, it will understand as a different
 #parameter input
-print(42,"poly",3,"chem","computer")
+print(42,"Wubi",3,"chem","computer")
 print(42,000)
 print(42.000)
 
-name = "polyana"
+name = "Wubi"
 newName = "poly"
 name = newName
 newName = name
@@ -105,10 +106,78 @@ print(int(3.99999))
 print(int(-4.11212132))
 print(int(-4.99999))
 print(int("1977"))
-#print(int("polyana"))
+#print(int("Wubi"))
+
 
 print(float(1977))
 print(float(3.1415))
 
 print(str(1977))
 print(str(3.0))
+
+age = 15
+print(type(age))
+age = float(age)
+print(type(age))
+
+#Create a list of new emails
+#Python allows different data types to be
+# stored side by side in a list
+#For example:
+aList = ["She", "Saw", "Seashells", "Seashore"]
+emailAdress = "@ursulineacademy.org"
+
+for student in aList:
+    # addition between two strings in concatenation
+    email = student+emailAdress 
+    print(email)
+    
+#input fuction
+userName = input("What is your name? ")
+userAdress = input("What is your adress? ")
+userCity = input("What is your city? ")
+userZip = input("What is your zip code? ")
+
+print(userName,userAdress,userCity,userZip)
+"""
+#computing amount if one is given compound interest
+#Classroom Exercise
+# A = P*(1+r/n)**(n*t)
+
+def calculatorPrinciple():
+    principal = float(input("Enter the initial principal amount: "))
+    r = 0.08 
+    n = 12
+    t = float(input("Time: "))
+
+    amount = principal * (1 + (r/n))**(n*t)
+    print("Total Accumulated", amount)
+    
+    calculatorPrinciple()
+
+ #Mailing adress exercise
+
+def mailingAdress():
+    Name = input("What is your Name?")
+    StreetAddress = input("What is your StreetAddress?")
+    City = input("What is your City?")
+    State = input("What is your State?")
+    ZipCode = input("What is your zip code?")
+    print(Name)
+    print(StreetAddress)
+    print(City , State , ZipCode)
+
+#mailingAdress()
+
+
+def bottleDeposists():
+       # reads the number of bottles
+       numOneLiterBottle = input("Number of 1L bottles: ")
+       numMoreOneLiterBottle = input("Number of more than 1L Bottles : ")
+       refund = numMoreOneLiterBottle*0.25+numOneLiterBottle*0.1
+       print("Your refund will be: $", refund)
+       # adding everything less than 1
+       # adding everything greater than 1
+
+#bottleDeposists()
+"""

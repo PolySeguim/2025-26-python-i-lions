@@ -6,14 +6,28 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
+def mailingAdress():
+    Name = input("What is your Name?")
+    StreetAddress = input("What is your StreetAddress?")
+    City = input("What is your City?")
+    State = input("What is your State?")
+    ZipCode = input("What is your zip code?")
+    print(Name)
+    print(StreetAddress)
+    print(City , State , ZipCode)
 
+#mailingAdress()
 """
 Exercise 2:  Hello
 Write a program that asks the user to enter his or her name.  
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
-
+def hello():
+    print("Enter name")
+    name = input()
+    print("Hello" + name)
+#hello()
 """
 Exercise 3:  Area of a Room
 Write a program that asks the user to enter the width and 
@@ -39,7 +53,20 @@ Create a program that reads the length and width of a
 farmer’s field from the user in feet.  Display the 
 area of the field in acres.  
 Hint: There are 43,560 square feet in an acre
+
 """
+
+def areaofaFeild():
+    print("Enter how much feet in width")
+    print("Enter how much feet in length")
+    width = float(input("enter width: ")) 
+    length = float(input("enter length: "))
+    area = width * length
+    print(area)
+
+areaofaFeild()
+
+
 
 """
 Exercise 5:  Bottle Deposits
@@ -63,6 +90,7 @@ def bottleDeposits():
     refund = round(refund, 2)
     print("Your refund will be: $", "{:.2f}".format(refund))
     # adding everything greater than 1
+    
 
 
     # To ensure we have two decimal places
