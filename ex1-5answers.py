@@ -1,4 +1,4 @@
-
+#some changes to commit
 """
 Exercise 1:  Mailing Address
 Create a program that displays your name and complete mailing 
@@ -6,7 +6,17 @@ address formatted in the manner that you would usually see it
 on the outside of an envelope.  Your program does not need to 
 read any input from the user.  (9 lines)
 """
+def printMailingAddress():
+    name = input("What is your full name? ")
+    street = input("What is your street address? ")
+    city = input("What is your city? ")
+    state = input("What is your state? ")
+    zip_code = input("What is your zip code? ")
 
+    print("Mailing Address:")
+    print(name)
+    print(street)
+    print(city + ", " + state + " " + zip_code)
 
 """
 Exercise 2:  Hello
@@ -14,6 +24,10 @@ Write a program that asks the user to enter his or her name.
 The program should respond with a message that says hello to 
 the user, using his or her name.  (9 lines)
 """
+
+def printHelloMessage():
+    name = input("What is your name? ")
+    print("Hello, " + name + "!")
 
 """
 Exercise 3:  Area of a Room
@@ -25,14 +39,8 @@ numbers.  Include units in your prompt and output message;
 either feet or meters, depending on which unit you are more 
 comfortable working with.  (13 lines)
 """
-def areaRoom():
-    print("Area of Room")
-    units = input("What units are you using?  feet or meters: ")
-    width = float(input("Width: "))
-    length = float(input("Length: "))
 
-    areaRoom = width*length
-    print("Area of the room is " + str(areaRoom) + " " + units + " squared")
+
 
 """
 Exercise 4:  Area of a Field
@@ -56,20 +64,12 @@ those containers.  Format the output so that it includes a dollar
 sign and always displays exactly two decimal places.  (15 lines)
 """
 
-def bottleDeposits():
-    # reads the number of bottles
-    numOneLiterBottle = int(input("Number of 1L bottles: "))
-    numMoreOneLiterBottle = int(input("Number of more than 1L bottles: "))
-    refund = numMoreOneLiterBottle*0.25+numOneLiterBottle*0.1
-    refund = round(refund, 2)
-    print("Your refund will be: $", "{:.2f}".format(refund))
-    # adding everything greater than 1
+
+def print_hi(name):
+    print(f"Hi, {name}")
 
 
-    # To ensure we have two decimal places
-    # number_two_decimal = "{:.2f}".format(number_string)
-    # print(number_two_decimal)
-
-bottleDeposits()
-#Testing Suite
-#areaRoom()
+if __name__ == "__main__":
+    print_hi("Netbeans")
+    printMailingAddress()
+    printHelloMessage()
